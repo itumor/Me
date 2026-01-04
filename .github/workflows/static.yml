@@ -37,7 +37,7 @@ jobs:
           node-version: 22
       - name: Install dependencies
         working-directory: devportfolio
-        run: npm ci
+        run: npm install --no-audit --no-fund
       - name: Build site
         working-directory: devportfolio
         run: npm run build
