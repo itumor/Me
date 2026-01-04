@@ -31,13 +31,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: devportfolio/package-lock.json
+      - name: Install dependencies
+        working-directory: devportfolio
+        run: npm ci
+      - name: Build site
+        working-directory: devportfolio
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the static site from the devportfolio directory
-          path: './devportfolio/'
+          # Upload the built static site from the Astro dist folder
+          path: './devportfolio/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
