@@ -10,6 +10,21 @@ import Education from "../components/Education.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
+
+const pageTitle = `${siteConfig.name} - ${siteConfig.title}`;
+const pageDescription = siteConfig.description;
+const pageUrl = siteConfig.social.linkedin || "/";
+const socialImage = "/Me/favicon.svg";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: siteConfig.name,
+  jobTitle: siteConfig.title,
+  description: pageDescription,
+  url: pageUrl,
+  email: `mailto:${siteConfig.social.email}`,
+  sameAs: [siteConfig.social.linkedin, siteConfig.social.github, siteConfig.social.twitter].filter(Boolean),
+};
 ---
 
 <html lang="en">
@@ -18,14 +33,31 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/Me/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={siteConfig.description} />
+    <meta name="description" content={pageDescription} />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content={siteConfig.accentColor} />
+    <link rel="canonical" href={pageUrl} />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={socialImage} />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={socialImage} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>{siteConfig.name} - {siteConfig.title}</title>
+    <title>{pageTitle}</title>
+    <script type="application/ld+json">
+      {JSON.stringify(structuredData)}
+    </script>
   </head>
   <body>
     <Header />
