@@ -103,4 +103,40 @@ export const siteConfig = {
       ],
     },
   ],
+  certifications: [
+    {
+      name: "AWS Certified Solutions Architect – Associate (SAA)",
+      issuer: "Amazon Web Services",
+    },
+    {
+      name: "Certified Kubernetes Administrator (CKA)",
+      issuer: "Cloud Native Computing Foundation",
+    },
+    {
+      name: "Certified Kubernetes Application Developer (CKAD)",
+      issuer: "Cloud Native Computing Foundation",
+    },
+    {
+      name: "Kubernetes and Cloud Native Associate (KCNA)",
+      issuer: "Cloud Native Computing Foundation",
+    },
+    {
+      name: "Certified SAFe Practitioner",
+      issuer: "Scaled Agile",
+    },
+    {
+      name: "CCNA",
+      issuer: "Cisco",
+    },
+    {
+      name: "CAST AI: Workload Optimization",
+      issuer: "CAST AI",
+      date: "Issued Aug 2025",
+    },
+    {
+      name: "CAST AI: Container Live Migration",
+      issuer: "CAST AI",
+      date: "Issued Nov 2025",
+    },
+  ],
 };
