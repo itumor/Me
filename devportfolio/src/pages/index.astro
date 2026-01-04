@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Brand from "../components/Brand.astro";
+import Highlights from "../components/Highlights.astro";
 import Projects from "../components/Projects.astro";
 import Experience from "../components/Experience.astro";
 import Certifications from "../components/Certifications.astro";
@@ -15,7 +16,7 @@ const siteBase = Astro.site ? Astro.site.toString().replace(/\/$/, "") : "https:
 const pageTitle = `${siteConfig.name} - ${siteConfig.title}`;
 const pageDescription = siteConfig.description;
 const pageUrl = siteBase;
-const socialImage = "/Me/favicon.svg";
+const socialImage = `${siteBase}/og-image.svg`;
 
 const structuredData = [
   {
@@ -103,6 +104,7 @@ const structuredData = [
     <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={pageUrl} />
     <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content={pageTitle} />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={pageTitle} />
@@ -128,6 +130,7 @@ const structuredData = [
       <Projects />
       <Experience />
       <Certifications />
+      <Highlights />
       <Education />
     </section>
     <Footer />

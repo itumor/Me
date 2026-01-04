@@ -1,0 +1,46 @@
+---
+const highlights = [
+  {
+    title: "Platform impact",
+    detail:
+      "CAST AI optimization across hundreds of EKS clusters: rightsizing, spot adoption, live migration while maintaining SLOs.",
+  },
+  {
+    title: "GitOps delivery",
+    detail:
+      "Crossplane service catalogs and Terraform pipelines to standardize AWS provisioning across teams and accounts.",
+  },
+  {
+    title: "Modernization",
+    detail:
+      "VM-to-Kubernetes migrations using GitOps patterns, service mesh, and observability upgrades for reliability and security.",
+  },
+  {
+    title: "Cloud foundations",
+    detail:
+      "Multi-account AWS landing zones with shared networking, guardrails, and centralized observability for regulated environments.",
+  },
+];
+---
+
+<section id="highlights" class="p-8 sm:p-12 md:p-16 lg:p-24 bg-white">
+  <div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+          Highlights
+        </h2>
+        <div class="w-[75px] h-[5px] mt-2 rounded-full bg-gray-900" />
+      </div>
+
+      <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        {highlights.map((item) => (
+          <div class="bg-gray-50 rounded-2xl border border-gray-200 p-4 sm:p-6 shadow-sm">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">{item.title}</h3>
+            <p class="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed">{item.detail}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
