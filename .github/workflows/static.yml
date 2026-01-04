@@ -31,11 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Checkout devportfolio
-        uses: actions/checkout@v4
-        with:
-          repository: RyanFitzgerald/devportfolio
-          path: devportfolio
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
