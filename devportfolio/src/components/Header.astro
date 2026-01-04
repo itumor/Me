@@ -5,6 +5,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasCertifications = siteConfig.certifications && siteConfig.certifications.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasHighlights = true;
 ---
 
 <header
@@ -61,6 +62,18 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Certifications
+            </a>
+          </li>
+        )
+      }
+      {
+        hasHighlights && (
+          <li>
+            <a
+              href="#highlights"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Highlights
             </a>
           </li>
         )
