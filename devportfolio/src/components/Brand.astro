@@ -1,0 +1,103 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="brand" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  <div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4 space-y-3">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+          Profile
+        </h2>
+        <div
+          class="w-[75px] h-[5px] mt-2 rounded-full"
+          style={`background-color: ${siteConfig.accentColor}`}
+        />
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+          I design and scale secure, cost-efficient AWS & Kubernetes platforms with an automation-first mindset.
+        </p>
+      </div>
+
+      <div class="lg:col-span-8 space-y-8">
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl border border-gray-200 p-4 sm:p-6 md:p-8">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Focus</h3>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base text-gray-700">
+              {[
+                "AWS & EKS platform architecture",
+                "GitOps & platform engineering",
+                "FinOps / GreenOps built into delivery",
+                "Secure multi-account foundations",
+              ].map((item) => (
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-gray-400" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 md:p-8 shadow-sm">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Impact snapshots</h3>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base text-gray-700">
+              {[
+                "CAST AI optimization across hundreds of EKS clusters (rightsizing, spot, live migration)",
+                "Crossplane service catalogs to standardize AWS provisioning",
+                "VM-to-Kubernetes migrations using GitOps patterns",
+                "Multi-account AWS foundations with shared networking, security, and observability",
+              ].map((item) => (
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-gray-400" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 md:p-7 shadow-sm">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">How I work</h3>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base text-gray-700">
+              {[
+                "Platform over projects; reuse first",
+                "GitOps and policy-driven guardrails",
+                "Cost and security as first-class requirements",
+                "Kubernetes only when it’s the right fit",
+              ].map((item) => (
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-gray-400" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 md:p-7 shadow-sm">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Open to</h3>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base text-gray-700">
+              {[
+                "Cloud & Kubernetes platform architecture",
+                "FinOps / GreenOps initiatives",
+                "EKS optimization at scale",
+                "GitOps and platform transformations",
+              ].map((item) => (
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-gray-400" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 md:p-7 shadow-sm">
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Contact</h3>
+          <p class="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+            Based in Riga, Latvia (EU). Reach out via LinkedIn or the portfolio contact form.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
