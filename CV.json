@@ -1,0 +1,269 @@
+{
+  "source": {
+    "linkedin_url": "https://www.linkedin.com/in/ebrahim-ramadan/",
+    "cv_pdf": "Ebrahim Ramadan CV (uploaded PDF)"
+  },
+  "basics": {
+    "name": "Ibrahim (Ebrahim Ramadan) Timor",
+    "label": "AWS & Kubernetes Cloud Architect | DevOps Engineer | EKS • Terraform • GitLab CI/CD • Crossplane • CAST AI • FinOps | Certified CKA • CKAD • KCNA • SAA | Scalable Cloud & Automation Specialist",
+    "location": {
+      "city": "Riga",
+      "country": "Latvia"
+    },
+    "contact": {
+      "address": "unijas iela 24, Vidzeme Suburb, Riga, Riga, LV-1001, Latvia",
+      "email": "huma20050002hti28@gmail.com",
+      "phone": "+371 25 422 754"
+    }
+  },
+  "links": [
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ebrahim-ramadan/"
+    },
+    {
+      "type": "portfolio",
+      "label": "Portfolio (Gamma)",
+      "url": "https://cloud-architect-kubernet-7tpqqph.gamma.site/"
+    }
+  ],
+  "summary": [
+    "AWS Solutions Architect and DevOps Leader based in Riga, Latvia focused on secure, scalable, cost-efficient cloud architectures for EU & EMEA.",
+    "Builds production cloud platforms using AWS, Kubernetes (EKS), Terraform, GitLab CI/CD, GitOps, Crossplane, and DevSecOps."
+  ],
+  "specialties": [
+    "Highly available and cost-optimized AWS architectures",
+    "EKS cluster design, EC2 Auto Scaling, Fargate, Lambda serverless workloads",
+    "Multi-account VPC architectures, Transit Gateway networking, Route53, CloudFront, WAF/Shield",
+    "Security-first AWS design: IAM governance, KMS, Secrets Manager, GuardDuty, Config",
+    "Data layer: S3 lifecycle design, RDS/Aurora optimization, DynamoDB patterns, ElastiCache, backup and DR",
+    "GitOps delivery with GitLab, ArgoCD, Helm, Terraform, Crossplane",
+    "Observability and governance with CloudWatch, CloudTrail, AWS Config, X-Ray, OpenSearch, Prometheus, Grafana",
+    "Platform engineering leadership across migrations and modernization",
+    "FinOps: reduce cloud spend and optimize compute and storage",
+    "Reusable IaC modules, platform standards, automated delivery pipelines"
+  ],
+  "top_skills_linkedin": [
+    "Amazon Web Services (AWS)",
+    "Kubernetes",
+    "DevOps",
+    "Cloud Architecture",
+    "Terraform"
+  ],
+  "skills_cv": {
+    "cloud": ["AWS", "Azure", "Alibaba Cloud", "CenturyLink", "Jelastic Cloud"],
+    "containers": ["Docker", "Kubernetes", "Istio"],
+    "observability": ["Dynatrace", "ManageEngine Applications Manager", "Splunk", "Graylog", "Grafana", "Prometheus"],
+    "devops_tools": ["Jenkins", "Terraform", "Ansible", "Chef", "Vagrant", "Artifactory", "Fastlane"],
+    "databases": ["Oracle Database (11g/12c)", "Microsoft SQL Server (2005/2008/2012)", "MySQL", "MongoDB"],
+    "virtualization": ["VMware ESXi", "VMware Workstation", "VMware vCenter 5.5", "Hyper-V (2008/2012)", "Oracle VM VirtualBox"],
+    "app_servers": ["Oracle WebLogic (11g/12c)", "Oracle HTTP Server 12c", "Apache HTTP Server", "GlassFish (3/4)", "JBoss", "IIS", "Nginx", "Tomcat", "Vert.x", "LAMP", "WAMP"],
+    "operating_systems": ["Oracle Linux (6.5/7)", "Oracle Solaris 11", "Ubuntu (14/16/18)", "macOS", "Windows Server (2003/2008/2012)"],
+    "directory_services": ["Apache LDAP", "Microsoft Active Directory (AD)"],
+    "portals": ["Liferay"],
+    "bpm_rules": ["jBPM", "Drools", "Oracle SOA Suite 11g/12c"],
+    "collaboration_vcs": ["JIRA", "Bitbucket", "Git", "Confluence", "Mercurial", "SVN", "Gliffy", "GitHub", "GitLab"],
+    "development": ["Linux Shell Scripting", "C#", "SQL", "PowerBuilder", "Java SE", "PHP", "JavaScript", "Python", "ASP.NET"],
+    "testing_tools": ["IBM Rational Robot", "Postman", "Newman", "JMeter", "Selenium"],
+    "management": ["Agile management", "System team management", "PHP development team management (part-time)"],
+    "business": ["Human Resource Management", "Business Process & Workflow Management", "Archiving & Content Management", "Offers & Marketing"]
+  },
+  "certifications": [
+    "AWS Certified Solutions Architect – Associate (SAA)",
+    "Certified Kubernetes Administrator (CKA)",
+    "Certified Kubernetes Application Developer (CKAD)",
+    "Kubernetes and Cloud Native Associate (KCNA)",
+    "Certified SAFe Practitioner",
+    "CCNA",
+    "CAST AI: Workload Optimization (Issued Aug 2025)",
+    "CAST AI: Container Live Migration (Issued Nov 2025)"
+  ],
+  "languages": [
+    { "name": "Arabic", "level": "Native or bilingual proficiency" },
+    { "name": "English", "level": "Full professional proficiency" }
+  ],
+  "interests": ["Traveling", "Cycling", "Movies", "PS games", "Diving", "Snorkeling"],
+  "experience": [
+    {
+      "company": "Accenture Baltics",
+      "roles": [
+        {
+          "title": "Associate Manager & Cloud Architect",
+          "start": "Jun 2022",
+          "end": "Present",
+          "location": "Riga, Latvia"
+        },
+        {
+          "title": "Cloud Architect",
+          "start": "Feb 2021",
+          "end": "Jun 2022",
+          "location": "Baltics"
+        }
+      ]
+    },
+    {
+      "company": "C.T.Co",
+      "roles": [
+        {
+          "title": "Senior DevOps Engineer / Solution Architect",
+          "start": "Aug 2020",
+          "end": "Feb 2021",
+          "location": "Latvia"
+        }
+      ]
+    },
+    {
+      "company": "Accenture",
+      "roles": [
+        {
+          "title": "DevOps Team Leader",
+          "start": "Sep 2017",
+          "end": "Aug 2020",
+          "location": "Riga, Latvia",
+          "projects": [
+            {
+              "client": "Swisscom",
+              "summary": "Migration of Elastic Path from VMs to containers on Kubernetes; service mesh and security tooling; observability stack.",
+              "tech": ["Kubernetes", "Istio", "Jenkins", "Docker", "Artifactory", "Aqua Security", "Kiali", "Grafana", "Prometheus", "JFrog Xray", "Apache Solr", "ActiveMQ"],
+              "methods": ["CI/CD", "Scrum", "Agile", "Service Mesh", "DevSecOps"]
+            },
+            {
+              "client": "Roche",
+              "summary": "Designed and built a full DevOps stack for big data, web, and mobile projects; automation and workflow improvements.",
+              "tech": ["DC/OS Mesosphere", "Linkerd", "Terraform", "AWS", "Jenkins", "Artifactory", "Vert.x", "Spark", "Kafka", "Cassandra", "Java", "Zeppelin"],
+              "methods": ["CI/CD", "Scrum", "Agile", "Cloud-agnostic"]
+            },
+            {
+              "client": "Volkswagen",
+              "summary": "Designed and built services on AWS using Terraform.",
+              "tech": ["AWS", "Terraform"],
+              "methods": ["Scrum", "Agile"]
+            },
+            {
+              "client": "Electrolux",
+              "summary": "Unified CI/CD pipeline for iOS and Android apps; mobile CI/CD processes.",
+              "tech": ["Fastlane", "Jenkins", "App Center", "Nexus"],
+              "methods": ["CI/CD", "Scrum", "Agile"]
+            },
+            {
+              "client": "SAP Hybris",
+              "summary": "Supported cloud SAP Hybris; deployment, monitoring, and implementation lifecycle.",
+              "tech": ["Java", "Tomcat", "Apache", "Rundeck", "Ansible"],
+              "methods": ["DevOps", "Kanban", "Agile"]
+            },
+            {
+              "client": "E.ON Energy",
+              "summary": "Built DevOps stack; CI/CD, IaC, and continuous code quality practices.",
+              "tech": ["Chef", "Docker", "Azure", "Vagrant", "Jenkins", "Artifactory", "Jira", "Confluence", "HipChat", "SonarQube", "Kubernetes"],
+              "methods": ["DevOps", "Kanban", "Agile"]
+            },
+            {
+              "client": "Big Data Innovation",
+              "summary": "Designed and led development of a fast setup platform for big data solutions integrated with DevOps tooling.",
+              "tech": ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Hadoop", "Spark", "Hive", "Hue", "Oozie"],
+              "methods": ["DevOps", "Kanban", "Agile"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Dematic / Advansys ESC",
+      "roles": [
+        {
+          "title": "Senior DevOps Engineer",
+          "start": "Nov 2016",
+          "end": "Sep 2017",
+          "summary": "SME for DevOps tools; troubleshooting across toolchain; supported pipelines; monitoring reliability; dashboards and reporting."
+        }
+      ]
+    },
+    {
+      "company": "TRUEMEGA Technology Solutions (Vodafone)",
+      "roles": [
+        {
+          "title": "Software Team Leader / Solutions Architect",
+          "summary": "Led teams; handled customer requests; troubleshooting; proposals; PoCs and technical demos."
+        }
+      ]
+    },
+    {
+      "company": "United OFOQ",
+      "roles": [
+        {
+          "title": "Systems Engineering Team Leader",
+          "summary": "Managed administrators; monitored infrastructure; OS/app tooling; security/backup; scripts/automation; 2nd/3rd level support."
+        }
+      ]
+    },
+    {
+      "company": "PocketSolutions",
+      "roles": [
+        {
+          "title": "Mobile Developer and Architect (Part-Time)",
+          "summary": "Cross-platform mobile apps; responsive web apps; mobile back-end integration; DB integrations; SOAP/REST and BPM integration."
+        }
+      ]
+    },
+    {
+      "company": "Agorateam",
+      "roles": [
+        {
+          "title": "Developer",
+          "summary": "Mobile back-end web services; admin web app development."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Higher Technological Institute",
+      "degree": "B.Sc. Electrical Engineering and Computer Engineering",
+      "start": "2005",
+      "end": "2010",
+      "grade": "Good",
+      "project": "Design and analysis of linear integrated Dipole Microstrip Patch antenna array around 8 GHZ (Excellent)"
+    }
+  ],
+  "recommendations_received": [
+    {
+      "from": "Jose Antonio Coarasa Perez",
+      "role_context": "Managed you directly (Apr 30, 2025)",
+      "highlights": [
+        "Founder team member; key contributions building curated AWS platform",
+        "Built service catalog and Crossplane automations enabling migrations",
+        "Led CAST AI integration across hundreds of EKS clusters",
+        "Led complex application transformations to GitOps pattern; added observability",
+        "Strengths: transparency, perseverance, collaboration; led complex projects successfully"
+      ]
+    },
+    {
+      "from": "Rino Guglietta",
+      "role_context": "Managed you directly (Apr 8, 2025)",
+      "highlights": [
+        "DevOps + Kubernetes knowledge supporting on-prem to AWS modernization",
+        "Exploring GenAI approaches to simplify migration/modernization work",
+        "Strong collaborator"
+      ]
+    }
+  ],
+  "content_highlights": [
+    {
+      "type": "post",
+      "topic": "Reducing/eliminating iCloud storage cost; backup strategy limitations for iPhone/NAS",
+      "tags": ["#iCloud", "#DataOwnership", "#CloudStorage", "#BackupStrategy", "#TechDiscussion"]
+    },
+    {
+      "type": "post",
+      "topic": "GreenOps for EKS; carbon-aware scheduling + pipeline CO2 observability + GitOps enforcement + FinOps/GreenOps loop with CAST AI spot usage",
+      "tags": ["#GreenOps", "#CloudSustainability", "#PlatformEngineering", "#Kubernetes", "#FinOps", "#EKS", "#DevOps"]
+    }
+  ],
+  "privacy_optional_fields_from_cv": {
+    "date_of_birth": "1988-01-03",
+    "nationality": "Egyptian",
+    "military_status": "Exempted",
+    "marital_status": "Single"
+  }
+}
