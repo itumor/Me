@@ -11,20 +11,80 @@ import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
 
+const siteBase = Astro.site ? Astro.site.toString().replace(/\/$/, "") : "https://itumor.github.io/Me";
 const pageTitle = `${siteConfig.name} - ${siteConfig.title}`;
 const pageDescription = siteConfig.description;
-const pageUrl = siteConfig.social.linkedin || "/";
+const pageUrl = siteBase;
 const socialImage = "/Me/favicon.svg";
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: siteConfig.name,
-  jobTitle: siteConfig.title,
-  description: pageDescription,
-  url: pageUrl,
-  email: `mailto:${siteConfig.social.email}`,
-  sameAs: [siteConfig.social.linkedin, siteConfig.social.github, siteConfig.social.twitter].filter(Boolean),
-};
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteConfig.name,
+    jobTitle: siteConfig.title,
+    description: pageDescription,
+    url: pageUrl,
+    email: `mailto:${siteConfig.social.email}`,
+    sameAs: [siteConfig.social.linkedin, siteConfig.social.github, siteConfig.social.twitter].filter(Boolean),
+    knowsAbout: [
+      "AWS",
+      "Kubernetes",
+      "EKS",
+      "GitOps",
+      "Terraform",
+      "FinOps",
+      "GreenOps",
+      "Platform Engineering",
+      "Crossplane",
+      "CAST AI",
+    ],
+    hasCredential: (siteConfig.certifications || []).map((cert) => ({
+      "@type": "EducationalOccupationalCredential",
+      name: cert.name,
+      issuer: cert.issuer,
+      validFor: cert.date,
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `Who is ${siteConfig.name}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${siteConfig.name} is an AWS and Kubernetes cloud architect based in Riga, Latvia, focused on secure, automated, and cost-efficient platforms across EU and EMEA.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What does he specialize in?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Designing AWS landing zones, EKS platforms, GitOps delivery with Terraform and Crossplane, and FinOps/GreenOps practices using CAST AI.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can you contact him?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Reach out via email at ${siteConfig.social.email} or LinkedIn at ${siteConfig.social.linkedin}.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What certifications does he hold?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AWS Certified Solutions Architect – Associate, CKA, CKAD, KCNA, Certified SAFe Practitioner, CCNA, and CAST AI certifications.",
+        },
+      },
+    ],
+  },
+];
 ---
 
 <html lang="en">

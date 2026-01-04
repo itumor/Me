@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://itumor.github.io/Me/sitemap-index.xml
