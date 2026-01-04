@@ -1,0 +1,29 @@
+# https://itumor.github.io/Me
+> Portfolio for Ibrahim (Ebrahim) Timor — AWS & Kubernetes cloud architect focused on secure, automated, cost-efficient platforms across EU/EMEA.
+
+## Profile
+- [Home](https://itumor.github.io/Me/): Overview, positioning, key focus areas (AWS/EKS, GitOps, FinOps/GreenOps, multi-account foundations).
+- [Profile section](https://itumor.github.io/Me/#brand): How he works, open-to-collaboration areas, impact snapshots.
+
+## Projects
+- [Projects](https://itumor.github.io/Me/#projects): Case studies including AWS platform modernization, Elastic Path migration to Kubernetes, big data platform accelerator.
+
+## Experience
+- [Experience](https://itumor.github.io/Me/#experience): Roles at Accenture Baltics, C.T.Co, Accenture, Dematic/Advansys with bullet outcomes (landing zones, GitOps, CAST AI optimization, migrations).
+
+## Certifications
+- [Certifications](https://itumor.github.io/Me/#certifications): AWS SAA, CKA, CKAD, KCNA, SAFe Practitioner, CCNA, CAST AI (Workload Optimization, Container Live Migration).
+
+## Education
+- [Education](https://itumor.github.io/Me/#education): B.Sc. Electrical & Computer Engineering, Higher Technological Institute (2005–2010).
+
+## Contact
+- [LinkedIn](https://www.linkedin.com/in/ebrahim-ramadan/): Primary contact.
+- [Email](mailto:huma20050002hti28@gmail.com)
+
+## Q&A
+- Who is Ibrahim (Ebrahim) Timor? AWS & Kubernetes cloud architect in Riga focused on secure, automated, cost-efficient platforms. [Profile](https://itumor.github.io/Me/#brand)
+- What does he specialize in? EKS landing zones, GitOps (Terraform/Crossplane), FinOps/GreenOps with CAST AI. [Profile](https://itumor.github.io/Me/#brand)
+- Key projects? AWS platform modernization, Elastic Path to Kubernetes, Big Data platform accelerator. [Projects](https://itumor.github.io/Me/#projects)
+- Certifications? AWS SAA, CKA, CKAD, KCNA, SAFe Practitioner, CCNA, CAST AI. [Certifications](https://itumor.github.io/Me/#certifications)
+- How to contact? LinkedIn or email. [Contact](https://itumor.github.io/Me/#brand)
